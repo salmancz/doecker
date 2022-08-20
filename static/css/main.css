@@ -542,77 +542,6 @@ hr {
   background-color: #324234;
 }
 
-/*  #### NEWS FEED SECTION  #### */
-.feed-section {
-  height: 80vh;
-  box-shadow: 0 8px 6px -6px rgb(161, 161, 161);
-  background-color: #f7f7f7;
-  padding: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  border-radius: 2rem;
-  margin: 0 auto;
-  align-items: center;
-}
-.feed-section .register-section {
-  display: flex;
-  flex-direction: column;
-  /* align-items: space-around; */
-  justify-content: space-between;
-}
-
-.feed-section .register-section .register-text {
-  margin-bottom: 2rem;
-  color: #666;
-}
-
-.feed-section .register-section button {
-  padding: 0.8rem 1rem;
-  border-radius: 0.6rem;
-  border: none;
-  outline: none;
-  background-color: #138808;
-}
-
-.feed-section .register-section button a {
-  color: rgb(254, 254, 254);
-  text-decoration: none;
-}
-
-.feed-section .newsfeed .news-wrapper {
-  border: none;
-  border-radius: 0.6rem;
-  color: #666;
-  padding: 3rem;
-}
-
-.feed-section .newsfeed .news-wrapper ul li {
-  background-color: rgba(0, 0, 0, 0.852);
-  color: rgb(225, 225, 225);
-  padding: 1rem 0.8rem;
-  list-style: none;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-}
-
-.feed-section .newsfeed .news-wrapper ul li p {
-  margin-bottom: 1rem;
-}
-
-.feed-section .newsfeed .news-wrapper h2 {
-  margin-bottom: 1rem;
-}
-
-.feed-section .newsfeed .news-wrapper ul li a {
-  text-decoration: none;
-  border: none;
-  border-radius: 0.3rem;
-  color: #fff;
-  background-color: #138808;
-  padding: 0.3rem 0.6rem;
-}
-
 /* ###### ABOUT PAGE ########### */
 .abt-main-content {
   color: #5d5d5d;
@@ -755,4 +684,56 @@ hr {
   border: none;
   background-color: #fff;
   outline: none;
+}
+
+/* NEWS FEED */
+.feed-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* width: 80%; */
+  padding: 0 5rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.news-wrapper {
+  width: 35%;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.news-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.news-wrapper ul li {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 1rem;
+}
+
+.news-wrapper ul li a {
+  text-decoration: none;
+  color: crimson;
+}
+
+/* JOURNAL FEED */
+.journal-wrapper {
+  width: 60%;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.journal-wrapper .journal-card {
+  display: flex;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.journal-wrapper .journal-card .card {
+  padding: 1rem;
+  height: 40vh;
+  width: 50%;
+  background-color: rgb(245, 245, 245);
 }

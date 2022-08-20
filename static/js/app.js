@@ -100,3 +100,5 @@ function progress() {
     currentMainPost.classList.remove("main-post--not-active");
   }
 }
+
+// NEWS FEED ######
